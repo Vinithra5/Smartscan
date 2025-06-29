@@ -2,12 +2,10 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 import os
 
-# Set your details
 BUCKET_NAME = 'swiftscan-bucket'
-FILE_PATH = 'output/screenshot.png'  # Change this if your image name or path is different
+FILE_PATH = 'output/screenshot.png'  
 S3_FILE_NAME = 'screenshots/screenshot.png'
 
-# Initialize S3
 s3 = boto3.client('s3')
 
 def upload_file():
