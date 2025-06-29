@@ -6,4 +6,6 @@ __pycache__/
 # Uploads and cache
 static/uploads/
 cache.json
+
+# Secrets
 .env
